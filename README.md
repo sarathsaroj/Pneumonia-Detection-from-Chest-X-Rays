@@ -5,3 +5,5 @@ A convolutional neural network (CNN) is a type of deep learning artificial neura
 The code involves 2 parts:
 1.	Load a pretrained ResNet34
 2.	Replace the last layer of the network so that the output dimension matches the number of image classes (2). 
+
+X-ray dataset can be downloaded from here: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia

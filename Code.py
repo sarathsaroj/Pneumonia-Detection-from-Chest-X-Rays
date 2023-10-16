@@ -97,11 +97,11 @@ def train(train_loader, model, criterion, optimizer):
     loss_ = 0.0
     losses = []
 
-    # TO DO: read this documentation and then uncomment the line below; https://pypi.org/project/tqdm/
+    
     it_train = tqdm(enumerate(train_loader), total=len(train_loader), desc="Training ...", position = 0) # progress bar
     for i, (images, labels) in it_train:
 
-        # TO DO: read/understand and then uncomment these lines
+        
         images, labels = images.to(device), labels.to(device)
         optimizer.zero_grad()
         prediction = model(images)
@@ -121,11 +121,11 @@ def test(test_loader, model, criterion):
     correct = 0
     total = 0
 
-    # TO DO: read this documentation and then uncomment the line below; https://pypi.org/project/tqdm/
+    
     it_test = tqdm(enumerate(test_loader), total=len(test_loader), desc="Validating ...", position = 0)
     for i, (images, labels) in it_test:
 
-      # TO DO: read/understand and then uncomment these lines
+     
       images, labels = images.to(device), labels.to(device)
       with torch.no_grad():  # https://pytorch.org/docs/stable/generated/torch.no_grad.html
        output = model(images)
